@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEST</title>
+</head>
+<body>
+    <div class="login-page">
+        <div class="form" >
+          <form class="form" method="post" action="search">
+            {%csrf_token%}
+            
+                <select class='selection' name="category" >
+                  <option selected disabled >Category</option>
+                  <option value="landscaping">Landscaping</option>
+                  <option value="painting">Painting</option>
+                  <option value="management">Management</option>
+                </select>
+                <button type="submit">Search</button>
+             
+          </form>
+        </div>
+      </div>   
+</body>
+</html>
